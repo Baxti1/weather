@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         etCity = findViewById(R.id.etCity);
         tvWeather = findViewById(R.id.tvWeather);
 
-
+        Toast.makeText(this, "", Toast.LENGTH_SHORT).show();
     }
 
 
@@ -86,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
             } catch (JSONException e) {
                 e.printStackTrace();
             }
+
         }
     }
 }
